@@ -1,0 +1,25 @@
+public class StructLayoutAttribute : System.Attribute, _Attribute
+{
+
+	// Constructors
+	public StructLayoutAttribute(LayoutKind layoutKind) {}
+	public StructLayoutAttribute(short layoutKind) {}
+
+	// Methods
+	public virtual bool Equals(object obj) {}
+	public virtual int GetHashCode() {}
+	public virtual bool Match(object obj) {}
+	public virtual bool IsDefaultAttribute() {}
+	public Type GetType() {}
+	public virtual string ToString() {}
+
+	// Fields
+	public int Pack;
+	public int Size;
+	public CharSet CharSet;
+
+	// Properties
+	public LayoutKind Value { get{} }
+	public object TypeId { get{} }
+}
+

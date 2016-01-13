@@ -1,0 +1,4 @@
+public interface IReadOnlySessionState : IRequiresSessionState
+{
+}
+

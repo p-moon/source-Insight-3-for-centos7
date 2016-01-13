@@ -1,0 +1,7 @@
+; File generated automatically from ./winnls32.spec; do not edit!
+
+LIBRARY winnls32.dll
+
+EXPORTS
+  WINNLSEnableIME@8 @1
+  WINNLSGetEnableStatus@4 @2

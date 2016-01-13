@@ -1,0 +1,105 @@
+// This file maps an input file name to an alias name.
+// The alias name is used to determine the file's document type.
+// The Document Options command lets you specify how a file name maps to
+// a document type.
+
+// Each line should contain data in the form:
+//  filename = aliasname
+
+// The file names are not case sensitive.
+
+// This is a list of the files in the Standard C++ Library.  They are listed 
+// here because they do not have an extension, and we want to treat them 
+// like .h files.
+array=array.h
+algorithm=algorithm.h
+atomic=atomic.h
+BITSET=BITSET.h
+CASSERT=CASSERT.h
+CCTYPE=CCTYPE.h
+CERRNO=CERRNO.h
+CERTSRV=CERTSRV.h
+cfenv=cfenv.h
+CFLOAT=CFLOAT.h
+chrono=chrono.h
+cinttypes=cinttypes.h
+CISO646=CISO646.h
+CLIMITS=CLIMITS.h
+CLOCALE=CLOCALE.h
+CMATH=CMATH.h
+codecvt=codecvt.h
+COMPLEX=COMPLEX.h
+condition_variable=condition_variable.h
+CSETJMP=CSETJMP.h
+CSIGNAL=CSIGNAL.h
+scoped_allocator=scoped_allocator.h
+cstdalign=cstdalign.h
+CSTDARG=CSTDARG.h
+cstdbool=cstdbool.h
+CSTDDEF=CSTDDEF.h
+CSTDIO=CSTDIO.h
+CSTDLIB=CSTDLIB.h
+CSTRING=CSTRING.h
+ctgmath=ctgmath.h
+CTIME=CTIME.h
+cuchar=cuchar.h
+CWCHAR=CWCHAR.h
+CWCTYPE=CWCTYPE.h
+DEQUE=DEQUE.h
+forward_list=forward_list.h
+FSTREAM=FSTREAM.h
+functional=functional.h
+future=future.h
+initializer_list=initializer_list.h
+IOMANIP=IOMANIP.h
+IOS=IOS.h
+IOSFWD=IOSFWD.h
+IOSTREAM=IOSTREAM.h
+ISTREAM=ISTREAM.h
+ITERATOR=ITERATOR.h
+LIMITS=LIMITS.h
+LIST=LIST.h
+LOCALE=LOCALE.h
+MAP=MAP.h
+MEMORY=MEMORY.h
+mutex=mutex.h
+NEW=NEW.h
+NUMERIC=NUMERIC.h
+OSTREAM=OSTREAM.h
+QUEUE=QUEUE.h
+random=random.h
+ratio=ratio.h
+regex=regex.h
+SET=SET.h
+SSTREAM=SSTREAM.h
+STACK=STACK.h
+stdexcept=stdexcept.h
+streambuf=streambuf.h
+STRING=STRING.h
+sstream=sstream.h
+strstream=strstream.h
+system_error=system_error.h
+thread=thread.h
+typle=tuple.h
+TYPEINFO=TYPEINFO.h
+typeindex=typeindex.h
+type_traits=type_traits.h
+unordered_map=unordered_map.h
+unordered_set=unordered_set.h
+UTILITY=UTILITY.h
+VALARRAY=VALARRAY.h
+VECTOR=VECTOR.h
+exception=exception.h
+XCOMPLEX=XCOMPLEX.h
+XIOSBASE=XIOSBASE.h
+XLOCALE=XLOCALE.h
+XLOCINFO=XLOCINFO.h
+XLOCMON=XLOCMON.h
+XLOCNUM=XLOCNUM.h
+XLOCTIME=XLOCTIME.h
+XMEMORY=XMEMORY.h
+XSTDDEF=XSTDDEF.h
+XSTRING=XSTRING.h
+XTREE=XTREE.h
+XUTILITY=XUTILITY.h
+VERFILE=VERFILE.h

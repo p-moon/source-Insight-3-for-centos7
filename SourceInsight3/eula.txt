@@ -1,0 +1,208 @@
+Source Dynamics 
+Source Insight ™ Version 3.5 
+End-User License Agreement 
+
+IMPORTANT-READ CAREFULLY: This Source Insight End-User License Agreement 
+("EULA") is a legal agreement between you (either an individual or a single 
+entity) and Source Dynamics, Inc. ("Source Dynamics").  This EULA governs the 
+Source Dynamics software identified above, which includes the User Manual, 
+any associated software components, any media, any printed materials other 
+than the User Manual, and any "online" or electronic documentation ("SOFTWARE"). 
+By installing, copying, or otherwise using the SOFTWARE, you agree to be 
+bound by the terms of this EULA.  If you do not agree to the terms of this 
+EULA, Source Dynamics is unwilling to license the SOFTWARE to you.  In such 
+event, you may not install, copy, or use the SOFTWARE.  If the SOFTWARE was 
+mailed to you, return the media envelope, UNOPENED, along with the rest of 
+the package to the location where you obtained it within 30 days from purchase.
+
+1.     The SOFTWARE is protected by copyright laws and international 
+copyright treaties, as well as other intellectual property laws and treaties. 
+The SOFTWARE is licensed, not sold. You acknowledge that no title to the 
+intellectual property in the SOFTWARE is transferred to you.  You further 
+acknowledge that title and full ownership rights to the SOFTWARE will remain 
+the exclusive property of Source Dynamics and you will not acquire any rights 
+to the SOFTWARE except as expressly set forth in this license. You agree that 
+any copies of the SOFTWARE will contain the same proprietary notices which 
+appear on and in the SOFTWARE.
+
+2.     GRANT OF LICENSE.
+
+(a)   Evaluation Copy.  You are licensed to use the SOFTWARE without charge 
+on a non-exclusive, personal, non-transferable, revocable and limited 
+evaluation basis for thirty (30) days from the day that you install the 
+SOFTWARE.  You must pay the license fee and register your copy to continue to 
+use the SOFTWARE after the thirty (30) days.  You may not use the Software in 
+any manner if you do not pay the license fee and register the SOFTWARE after 
+such thirty (30) day period.  If you continue to use the SOFTWARE after the 
+thirty (30) day period without paying the license fee and registering you 
+will be using the SOFTWARE on an unlicensed an unauthorized basis.   
+
+ (b)   Registered Copy.  After you have purchased the license for SOFTWARE, 
+and have received the serial number enabling the registered copy, you are 
+licensed on a non-exclusive, personal, non-transferable (except as expressly 
+provided below), revocable and limited basis to copy the SOFTWARE only into 
+the memory of the number of computers corresponding to the number of licenses 
+purchased.  The primary user of the computer on which each licensed copy of 
+the SOFTWARE is installed may make a second copy for his or her exclusive use 
+on a portable computer.  Under no other circumstances may the SOFTWARE be 
+operated at the same time on more than the number of computers for which you 
+have paid a separate license fee.  In virtualization environments, such as a 
+terminal server or any other application server environment, you must acquire 
+and dedicate a license to the SOFTWARE for each computing device that uses 
+the SOFTWARE from the terminal server, application server, or other 
+virtualization environment. You may not distribute, copy, or duplicate the 
+SOFTWARE in whole or in part, except that you may make one copy of the 
+SOFTWARE for backup or archival purposes.  You may terminate this license at 
+any time by destroying the original and all copies of the SOFTWARE in 
+whatever form.  You may permanently transfer all of your rights under this 
+EULA, provided you send written notice of such request to Source Dynamics and 
+Source Dynamics in its discretion consents in writing to such transfer, 
+including conditions that you transfer all copies of the SOFTWARE (including 
+copies of all prior versions if the SOFTWARE is an upgrade) and retain none, 
+the recipient agrees to the terms of this EULA and any other conditions 
+required by Source Dynamics.
+
+3.     RESTRICTIONS; RESERVATION OF RIGHTS.  You may not reverse engineer, de-
+compile, or disassemble the SOFTWARE, except and only to the extent that such 
+activity is expressly permitted by applicable law notwithstanding this 
+limitation.  You may not rent, lease, or lend the SOFTWARE.  You may not 
+publish or publicly distribute any serial numbers, access codes, unlock-codes
+, passwords, or other end-user-specific registration information that would 
+allow a third party to activate the SOFTWARE without a valid license. You may 
+not include the SOFTWARE in any new compilations, such as software 
+collections on CD-ROM, or redistribute the Software in any electronic format 
+or otherwise without prior written consent of Source Dynamics in its 
+discretion.  The licenses granted to you in this EULA for the SOFTWARE are 
+conditioned upon your compliance with the terms and conditions of this EULA, 
+including, without limitation, payment of license fees.  Source Dynamics 
+reserves all rights not expressly granted to you in this EULA.
+
+4.     SUPPORT SERVICES.  Source Dynamics may provide you with support 
+services related to the SOFTWARE ("Support Services").  Use of Support 
+Services is governed by the Source Dynamics policies and programs described 
+in the user manual, in online documentation, and/or other Source Dynamics-
+provided materials, as they may be modified from time to time.  Any 
+supplemental software code provided to you as part of the Support Services 
+shall be considered part of the SOFTWARE and subject to the terms and 
+conditions of this EULA, unless separate terms are provided. This EULA does 
+not obligate Source Dynamics to provide any Support Services or to support 
+any software provided as part of the Support Services.  You agree that Source 
+Dynamics may collect and use technical information gathered as part of the 
+Support Services provided to you, if any, related to the Software.  
+
+5.     TERMINATION. You may terminate this license at any time by destroying 
+the original and all copies of the SOFTWARE in whatever form.  Without 
+prejudice to any other rights, Source Dynamics may immediately terminate this 
+EULA if you fail to comply with the terms and conditions of this EULA, 
+including, without limitation, payment of license fees.  In such event, you 
+must destroy the original and all copies of the SOFTWARE in whatever form.
+
+6.     INTELLECTUAL PROPERTY RIGHTS. The SOFTWARE is protected by copyright 
+laws and international copyright treaties, as well as other intellectual 
+property laws and treaties.  You acknowledge that no title to the SOFTWARE or 
+the intellectual property in the SOFTWARE is transferred to you.  You further 
+acknowledge that title and full ownership rights to the SOFTWARE will remain 
+the exclusive property of Source Dynamics and you will not acquire any rights 
+to the SOFTWARE except as expressly set forth in this license.  You agree 
+that any copies of the SOFTWARE will contain the same proprietary notices 
+which appear on and in the SOFTWARE.
+
+7.     EXPORT RESTRICTIONS.  You acknowledge that the SOFTWARE is subject to U
+.S. export jurisdiction.  You agree to comply with all applicable 
+international and national laws that apply to the Software, including, 
+without limitation, the U.S. Export Administration Regulations, as well as end
+-user, end-use, and destination restrictions issued by U.S. and other 
+governments.  Without limiting the foregoing, you agree that you will not 
+export or re-export the SOFTWARE to any country, person, entity, or end user 
+subject to U.S.A.  export restrictions.  You warrant and represent that 
+neither the U.S.A. Bureau of Export Administration nor any other federal 
+agency or other government has suspended, revoked or denied your export 
+privileges.
+
+8.     LIMITED WARRANTY; EXCLUSIVE REMEDY; DISCLAIMERS.  The evaluation copy 
+of the SOFTWARE is provided "AS IS" with no warranties or conditions of any 
+kind.  Source Dynamics warrants to you for your benefit alone that the 
+registered version of the SOFTWARE will perform substantially in accordance 
+with the accompanying written materials for a period of ninety (90) days from 
+the date of your receipt of the Software.  Any implied warranties on the 
+SOFTWARE are limited such ninety (90) day period.  You agree your exclusive 
+remedy for any breach of the foregoing limited warranty will be, in Source 
+Dynamics's sole option, to replace the SOFTWARE media or to credit the 
+license fees for the SOFTWARE paid by you to Source Dynamics , if any, and 
+terminate this EULA. The later remedy is subject to the return of all copies 
+of the SOFTWARE.  Some states do not allow limitations on duration of an 
+implied warranty, so the above limitation may not apply to you.  Source 
+Dynamics does not warrant that the SOFTWARE, its use, operation or your 
+ability to use the SOFTWARE will be uninterrupted or error-free or that all 
+SOFTWARE errors will be corrected.  The limited warranty set forth above 
+shall not apply to any defect or problems caused by any defect in any 
+hardware or software used in combination with the SOFTWARE, or use of the 
+SOFTWARE in execution environments not specified in the Documentation.  
+Source Dynamics does not warrant that the SOFTWARE or service will meet your 
+requirements or that the operation of the SOFTWARE will be uninterrupted or 
+error free.  EXCEPT FOR THE FOREGOING THE SOFTWARE AND ANY SERVICES PROVIDED "
+AS IS," WITHOUT WARRANTY OR CONDITION OF ANY KIND.  TO THE MAXIMUM EXTENT 
+PERMITTED BY APPLICABLE, LAW, SOURCE DYNAMICS AND ITS SUPPLIERS DISCLAIM ALL 
+OTHER WARRANTIES, CONDITIONS OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS, 
+IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND TITLE, NON-INFRINGEMENT
+, WITH RESPECT TO THE SOFTWARE AND THE ACCOMPANYING WRITTEN MATERIALS OR 
+SERVICES PROVIDED IN CONNECTION WITH THIS EULA.  This limited warranty gives 
+you specific legal rights.  You may have others, which vary from state to 
+state. Any warranties that by law survive the foregoing disclaimers shall 
+terminate ninety (90) days from the date you downloaded or otherwise received 
+the SOFTWARE.
+
+9.     LIMITATION OF LIABILITY. THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, 
+IN NO EVENT SHALL SOURCE DYNAMICS OR ITS SUPPLIERS OR ANY OF ITS LICENSORS, 
+DIRECTORS, OFFICERS, EMPLOYEES OR AFFILIATES OF ANY OF THE FOREGOING BE 
+LIABLE TO YOU FOR ANY CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR INDIRECT DAMAGES 
+OF ANY KIND ARISING OUT OF THE DELIVERY, PERFORMANCE, OR USE OF OR INABILITY 
+TO USE THE SOFTWARE, OR THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT 
+SERVICES, OR OTHERWISE UNDER OR IN CONNECTION WITH ANY PROVISION OF THIS EULA, 
+EVEN IF SOURCE DYNAMICS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH 
+DAMAGES.  NOTWITHSTANDING ANY DAMAGES THAT YOU MIGHT INCUR FOR ANY REASON 
+WHATSOEVER (INCLUDING, WITHOUT LIMITATION, ALL DAMAGES REFERENCED ABOVE AND 
+ALL DIRECT OR GENERAL DAMAGES), , SOURCE DYNAMICS'S ENTIRE LIABILITY UNDER 
+ANY PROVISION OF THIS EULA AND YOUR EXCLUSIVE REMEDY FOR ANY CLAIM, WHETHER 
+IN CONTRACT, TORT, OR ANY OTHER THEORY OF LIABILITY SHALL BE LIMITED TO AND 
+SHALL NOT EXCEED IN ANY EVENT ACTUAL DAMAGES INCURRED BY YOU BASED ON 
+REASONABLE RELIANCE UP TO THE GREATER OF THE AMOUNT ACTUALLY PAID BY YOU FOR 
+THE SOFTWARE OR U.S.$5.00.  THE FOREGOING LIMITATIONS, EXCLUSIONS AND 
+DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, 
+EVEN IF ANY REMEDY FAILS ITS ESSENTIAL PURPOSE.
+
+10.   U.S. GOVERNMENT RESTRICTED RIGHTS.  The SOFTWARE is provided with 
+RESTRICTED RIGHTS.  Use, duplication, or disclosure by the Government is 
+subject to restrictions as set forth in subparagraph ©(1)(ii) of The Rights 
+in Technical Data and Computer SOFTWARE clause of DFARS 252.227-7013 or 
+subparagraphs ©(i) and (2) of the Commercial Computer SOFTWARE-Restricted 
+Rights at 48 CFR 52.227-19, as applicable.  Manufacturer is Source Dynamics, 
+Inc., 22525 SE 64th Place, Suite 260, Issaquah, WA 98027, USA.
+
+11.   YOUR RESPONSIBILITIES.  You agree to immediately notify Source Dynamics 
+in writing of any misuse, misappropriation or unauthorized use, disclosure, 
+display or copying of the SOFTWARE that may come to your attention.  In 
+addition, you agree to defend, indemnify and hold Source Dynamics, its 
+suppliers and any of its licensors, directors, officers, employees or 
+affiliates of any of the foregoing harmless from any and all claims resulting 
+from or arising out of your use of the SOFTWARE or breach of this EULA.
+
+12.   CHOICE OF LAW AND VENUE. This EULA and all related matters shall be 
+interpreted under and controlled by the laws of the State of Washington, and 
+you consent to exclusive jurisdiction and venue in the state and federal 
+courts sitting in the State of Washington.  
+
+13.   MISCELLANEOUS.  This EULA is the complete agreement between Source 
+Dynamics and you and supersedes all prior agreements, oral or written, with 
+respect to the subject matter hereof.  Sections 3, 4, and Sections 6 through 
+13 will survive the termination or expiration of this EULA for any reason.  
+If any provision of this EULA is held to be void, invalid, unenforceable or 
+illegal, the other provisions shall continue in full force and effect.
+
+ 
+If you have any questions concerning this EULA or wish to contact Source 
+Dynamics for any reason, please write: Source Dynamics, Inc., 22524 SE 64th 
+Place, Suite 260, Issaquah, WA 98027, USA; or call (425) 557-3630; or send 
+electronic mail to sales@sourceinsight.com.
+

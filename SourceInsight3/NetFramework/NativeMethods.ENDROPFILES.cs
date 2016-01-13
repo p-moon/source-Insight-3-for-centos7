@@ -1,0 +1,19 @@
+public class ENDROPFILES
+{
+
+	// Constructors
+	public ENDROPFILES() {}
+
+	// Methods
+	public Type GetType() {}
+	public virtual string ToString() {}
+	public virtual bool Equals(object obj) {}
+	public virtual int GetHashCode() {}
+
+	// Fields
+	public NMHDR nmhdr;
+	public System.IntPtr hDrop;
+	public int cp;
+	public bool fProtected;
+}
+

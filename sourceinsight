@@ -1,0 +1,100 @@
+#!/bin/sh
+
+cd `dirname "$0"`
+aifei8_net_app_root=`pwd`
+
+#glibc version
+VERSION_STR=`ldd --version | head -1 | grep -o -E "[0-9]+\.[0-9]+(\.[0-9]+)?$"`
+MAJOR=`echo $VERSION_STR | cut -d. -f1`
+MINOR=`echo $VERSION_STR | cut -d. -f2`
+VERSION=$(($MAJOR*100+$MINOR))
+if [ $VERSION -lt 204 ]; then
+  echo "Source In Sight needs glibc version >= 2.4...exiting"
+  exit
+elif [ $VERSION -lt 209 ]; then
+  WINEDIR="wine_old"
+else
+  WINEDIR="wine"
+fi
+
+# Wine environment variables
+export LANG="en_US.UTF-8"
+export PATH="$aifei8_net_app_root/$WINEDIR/bin":"$aifei8_net_app_root":"$aifei8_net_app_root/$WINEDIR/drive_c/windows":"$PATH"
+export LD_LIBRARY_PATH="$aifei8_net_app_root/$WINEDIR/lib":"$aifei8_net_app_root/lib":"$LD_LIBRARY_PATH"
+export WINEDLLPATH="$aifei8_net_app_root/$WINEDIR/lib/wine"
+export WINELOADER="$aifei8_net_app_root/$WINEDIR/bin/wine"
+export WINESERVER="$aifei8_net_app_root/$WINEDIR/bin/wineserver"
+export WINEPREFIX="$HOME/.wine"
+export WINEDLLOVERRIDES="msxml3=n,b" # use native msxml3
+
+# check old version
+if [ -h "$WINEPREFIX/drive_c/windows/system32" ] ; then
+  rm -rf "$WINEPREFIX/drive_c/windows"
+  rm -f "$WINEPREFIX/system.reg"
+  rm -f "$WINEPREFIX/source\ In\ sight/*"
+fi
+
+# wine version
+if [ -f "$WINEPREFIX/Version" ] ; then
+  echo "80200" > "$WINEPREFIX/Version"
+fi
+
+# create directories
+[ -d "$WINEPREFIX" ] || mkdir -p "$WINEPREFIX"
+[ -d "$WINEPREFIX/drive_c" ] || mkdir -p "$WINEPREFIX/drive_c"
+[ -d "$WINEPREFIX/drive_c/Program Files" ] || mkdir -p "$WINEPREFIX/drive_c/Program Files"
+[ -d "$WINEPREFIX/drive_c/windows" ] || mkdir -p "$WINEPREFIX/drive_c/windows"
+[ -d "$WINEPREFIX/drive_c/windows/temp" ] || mkdir -p "$WINEPREFIX/drive_c/windows/temp"
+[ -d "$WINEPREFIX/drive_c/windows/system32" ] || mkdir -p "$WINEPREFIX/drive_c/windows/system32"
+[ -d "$WINEPREFIX/dosdevices" ] || mkdir -p "$WINEPREFIX/dosdevices"
+
+# create source\ In\ sight directories
+[ -f "$WINEPREFIX/source\ In\ sight" ] && rm -f "$WINEPREFIX/source\ In\ sight"
+[ -d "$WINEPREFIX/source\ In\ sight" ] || mkdir -p "$WINEPREFIX/source\ In\ sight"
+
+# create wine emulated devices
+if [ -h "$WINEPREFIX/dosdevices/c:" ] ; then
+  [ -d "$WINEPREFIX/dosdevices/c:" ] || rm -f "$WINEPREFIX/dosdevices/c:"
+fi
+[ -d "$WINEPREFIX/dosdevices/c:" ] || ln -s "$WINEPREFIX/drive_c/" "$WINEPREFIX/dosdevices/c:"
+
+if [ -h "$WINEPREFIX/dosdevices/z:" ] ; then
+  [ -d "$WINEPREFIX/dosdevices/z:" ] || rm -f "$WINEPREFIX/dosdevices/z:"
+fi
+[ -d "$WINEPREFIX/dosdevices/z:" ] || ln -s / "$WINEPREFIX/dosdevices/z:"
+
+if [ -h "$WINEPREFIX/dosdevices/y:" ] ; then
+  [ -d "$WINEPREFIX/dosdevices/y:" ] || rm -f "$WINEPREFIX/dosdevices/y:"
+fi
+if [ -d "$HOME" ] ; then
+    [ -d "$WINEPREFIX/dosdevices/y:" ] || ln -s "$HOME" "$WINEPREFIX/dosdevices/y:"
+fi
+
+# create symlinks to dlls in WINEDLLOVERRIDES
+for dll_name in \
+  msxml3.dll \
+  msxml3r.dll \
+  fontsub.dll \
+  ; do
+  if [ ! -h "$WINEPREFIX/drive_c/windows/system32/$dll_name" ] || [ `readlink "$WINEPREFIX/drive_c/windows/system32/$dll_name"` != "$aifei8_net_app_root/$WINEDIR/drive_c/windows/system32/$dll_name" ] ; then
+    rm -rf "$WINEPREFIX/drive_c/windows/system32/$dll_name"
+    ln -s "$aifei8_net_app_root/$WINEDIR/drive_c/windows/system32/$dll_name" "$WINEPREFIX/drive_c/windows/system32/$dll_name"
+  fi
+done
+
+# hide error/stdout message
+if test "z$WINEDEBUG" = z ; then
+  exec >/dev/null 2>&1
+fi
+
+# create wine environment, for ShowDotFiles
+if [ $VERSION -lt 209 ]; then
+  [ -f "$WINEPREFIX/system.reg" ] || `$aifei8_net_app_root/$WINEDIR/bin/wineprefixcreate`
+else
+  [ -f "$WINEPREFIX/system.reg" ] || `WINEDLLOVERRIDES="mshtml=" $aifei8_net_app_root/$WINEDIR/bin/winboot -i`
+fi
+
+
+# run source\ In\ sight.exe
+
+exec "${WINELOADER:-wine}" "$aifei8_net_app_root/SourceInsight3/Insight3.exe"

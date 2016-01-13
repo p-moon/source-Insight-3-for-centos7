@@ -1,0 +1,11 @@
+; File generated automatically from ./dlls/propsys/propsys.spec; do not edit!
+
+LIBRARY propsys.dll
+
+EXPORTS
+  PSGetPropertyDescription@12 @62
+  PSPropertyKeyFromString@8 @70
+  PSRegisterPropertySchema@4 @72
+  PSStringFromPropertyKey@12 @74
+  PSUnregisterPropertySchema@4 @75
+  PropVariantChangeType@16 @76

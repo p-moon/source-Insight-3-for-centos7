@@ -1,0 +1,22 @@
+public class DefaultPropertyAttribute : System.Attribute, System.Runtime.InteropServices._Attribute
+{
+
+	// Constructors
+	public DefaultPropertyAttribute(string name) {}
+
+	// Methods
+	public virtual bool Equals(object obj) {}
+	public virtual int GetHashCode() {}
+	public virtual bool Match(object obj) {}
+	public virtual bool IsDefaultAttribute() {}
+	public Type GetType() {}
+	public virtual string ToString() {}
+
+	// Fields
+	public DefaultPropertyAttribute Default;
+
+	// Properties
+	public string Name { get{} }
+	public object TypeId { get{} }
+}
+

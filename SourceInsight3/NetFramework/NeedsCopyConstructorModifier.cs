@@ -1,0 +1,13 @@
+public class NeedsCopyConstructorModifier
+{
+
+	// Constructors
+	public NeedsCopyConstructorModifier() {}
+
+	// Methods
+	public Type GetType() {}
+	public virtual string ToString() {}
+	public virtual bool Equals(object obj) {}
+	public virtual int GetHashCode() {}
+}
+

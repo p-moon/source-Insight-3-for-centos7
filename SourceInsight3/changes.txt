@@ -1,0 +1,53 @@
+>> For full change history information, please see Changes.html.
+
+--Change History for Source Insight version 3.50.0076--
+
+Fix: Draft View was showing source code in monochrome. Draft view is supposed
+to show only color formatting, but not font or font size changes.
+
+--Change History for Source Insight version 3.50.0075--
+
+Fix: Crash when searching with certain regular expression patterns.
+
+Fix: Crash when synchronizing projects and building the search index, which 
+was caused by very long identifier names.
+
+Fix: When using Search and Replace and the replacement string was empty, then 
+the search would skip over the next character.
+
+Fix: Crash in some cases during project synchronization if an error occurred 
+updating the symbol database for a particular source file. It now skips the 
+problem file and continues with synchronization.
+
+Fix: Searching with the "whole words only" option would not find matches if the 
+search pattern contained multiple words. For example, searching for "dog cat" 
+with "whole words only" would fail to find some instances.
+
+Fix: Crash could occur if a display Style contained both a "font size" AND a
+"font scale" value.
+
+Fix: Crash could occur when exiting Source Insight on Window 8/8.1.
+
+Update: The C/C++ token macros (in the c.tom file) were updated with more definitions.
+
+Update: Code signing certificate was renewed.
+
+Change: Switched to InstallShield for the installer program. Be sure to run as
+an Administrator when you run the setup program.
+
+Change: The default font was changed to Consolas, and the default syntax 
+formatting styles were changed. This only affects fresh installs, so your 
+existing settings won't change. If you want to reset to the new defaults, exit 
+Source Insight. Go to the "Documents\Source Insight\Settings" folder and rename 
+"Global.CF3" to something else. Restart SI. 
+
+Change: Several "custom language" extensions are now part of the installation. 
+They get installed into the <program directory>\languages folder. They are 
+automatically added to the languages list available via Options > Document 
+Options. These files were (and still are) available on our web site at 
+www.sourceinsight.com/public/languages
+
+Change: Some default settings were changed.
+
+Change: Added additional logging and checking during program initialization.
+

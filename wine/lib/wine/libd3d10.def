@@ -1,0 +1,18 @@
+; File generated automatically from ./dlls/d3d10/d3d10.spec; do not edit!
+
+LIBRARY d3d10.dll
+
+EXPORTS
+  D3D10CompileShader@40 @2
+  D3D10CreateBlob@8=d3dcompiler_43.D3DCreateBlob @3
+  D3D10CreateDevice@24 @4
+  D3D10CreateDeviceAndSwapChain@32 @5
+  D3D10CreateEffectFromMemory@24 @6
+  D3D10GetGeometryShaderProfile@4 @11
+  D3D10GetInputAndOutputSignatureBlob@12=d3dcompiler_43.D3DGetInputAndOutputSignatureBlob @12
+  D3D10GetInputSignatureBlob@12=d3dcompiler_43.D3DGetInputSignatureBlob @13
+  D3D10GetOutputSignatureBlob@12=d3dcompiler_43.D3DGetOutputSignatureBlob @14
+  D3D10GetPixelShaderProfile@4 @15
+  D3D10GetShaderDebugInfo@12=d3dcompiler_43.D3DGetDebugInfo @16
+  D3D10GetVertexShaderProfile@4 @18
+  D3D10ReflectShader@12 @20

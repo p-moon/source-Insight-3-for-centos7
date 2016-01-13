@@ -1,0 +1,23 @@
+; File generated automatically from ./dlls/userenv/userenv.spec; do not edit!
+
+LIBRARY userenv.dll
+
+EXPORTS
+  CreateEnvironmentBlock@12 @139
+  DestroyEnvironmentBlock@4 @140
+  ExpandEnvironmentStringsForUserA@16 @141
+  ExpandEnvironmentStringsForUserW@16 @142
+  GetAllUsersProfileDirectoryA@8 @143
+  GetAllUsersProfileDirectoryW@8 @144
+  GetDefaultUserProfileDirectoryA@8 @145
+  GetDefaultUserProfileDirectoryW@8 @146
+  GetProfilesDirectoryA@8 @147
+  GetProfilesDirectoryW@8 @148
+  GetProfileType@4 @149
+  GetUserProfileDirectoryA@12 @150
+  GetUserProfileDirectoryW@12 @151
+  LoadUserProfileA@8 @152
+  LoadUserProfileW@8 @153
+  RegisterGPNotification@8 @154
+  UnloadUserProfile@8 @155
+  UnregisterGPNotification@4 @156

@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 6">
+		<title>Source Insight Program Editor Change History</title>
+		<link href="main.css" rel="stylesheet" media="screen">
+		<style type="text/css" media="screen"><!--
+.feature  { font-size: 70%; line-height: 1em; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 1em 3em }
+.code   { color: green; font-size: 80%; font-family: "Courier New", Courier, Monaco; margin-top: 0.2em; margin-bottom: 0.2em }
+.codelist { color: green; font-size: 80%; font-family: "Courier New", Courier, Monaco; margin-top: 0em; margin-bottom: 0em }
+--></style>
+	</head>
+
+	<body bgcolor="#ffffff" text="black" link="#003399" vlink="#003399" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+		<TABLE WIDTH=811 BORDER=0 CELLPADDING=0 CELLSPACING=0 background="images/SubBack.jpg">
+			<TR height="37">
+				<TD rowspan="2" valign="top" width="229" height="89"><a href="http://www.sourceinsight.com/index.html"><img src="images/1p.gif" alt="" height="1" width="1" align="top" border="0"></a></TD>
+				<TD width="410" height="37">
+			</TD>
+				<TD rowspan="2" valign="top" width="175" height="89"><a href="http://www.sourceinsight.com/index.html"><img src="images/1p.gif" alt="" height="1" width="1" border="0"></a></TD>
+			</TR>
+			<TR height="52">
+				<TD align="center" valign="top" nowrap width="410" height="52">
+					<p class="menu"><a class="nodeco" href="http://www.sourceinsight.com/buyit.html">Buy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="nodeco" href="http://www.sourceinsight.com/prodinfo.html">Product</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="nodeco" href="http://www.sourceinsight.com/support.html">Support</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="nodeco" href="http://www.sourceinsight.com/update.html">Updates</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="nodeco" href="http://www.sourceinsight.com/contact.html">Contact</a>&nbsp;&nbsp;</p>
+				</TD>
+			</TR>
+		</TABLE>
+		<table width="100%" border="0" cellspacing="0" cellpadding="8">
+			<tr>
+				<td valign="top">
+					<h1>Source Insight 3.5 Change History</h1>
+					<p class="body">This page describes recent changes to Source&nbsp;Insight, starting with the most recent release.</p>
+					<p class="body">For full product features, please see the Source&nbsp;Insight <a href="http://www.sourceinsight.com/prodinfo.html">product information page</a>.</p>
+					<p class="body">To download the latest update, go to the <a href="http://www.sourceinsight.com/down35.html">download page</a>.</p>
+					
+
+					<h2>Version 3.50.0076 - Feb 19, 2015</h2>
+<p class="body">
+Fix: Draft View was showing source code in monochrome. Draft view is supposed
+to show only color formatting, but not font or font size changes.
+</p>
+					<h2>Version 3.50.0075 - Feb 11, 2015</h2>
+<p class="body">
+Fix: Crash when searching with certain regular expression patterns.<br><br>
+
+Fix: Crash when synchronizing projects and building the search index, which 
+was caused by very long identifier names.<br><br>
+
+Fix: When using Search and Replace and the replacement string was empty, then 
+the search would skip over the next character.<br><br>
+
+Fix: Crash in some cases during project synchronization if an error occurred 
+updating the symbol database for a particular source file. It now skips the 
+problem file and continues with synchronization.<br><br>
+
+Fix: Searching with the "whole words only" option would not find matches if the 
+search pattern contained multiple words. For example, searching for "dog cat" 
+with "whole words only" would fail to find some instances.<br><br>
+
+Fix: Crash could occur if a display Style contained both a "font size" AND a
+"font scale" value.<br><br>
+
+Fix: Crash could occur when exiting Source Insight on Window 8/8.1.<br><br>
+
+Update: The C/C++ token macros (in the c.tom file) were updated with more definitions.<br><br>
+
+Update: Code signing certificate was renewed.<br><br>
+
+Change: Switched to InstallShield for the installer program. Be sure to run as
+an Administrator when you run the setup program.<br><br>
+
+Change: The default font was changed to Consolas, and the default syntax 
+formatting styles were changed. This only affects fresh installs, so your 
+existing settings won't change. If you want to reset to the new defaults, exit 
+Source Insight. Go to the "Documents\Source Insight\Settings" folder and rename 
+"Global.CF3" to something else. Restart SI. <br><br>
+
+Change: Several "custom language" extensions are now part of the installation. 
+They get installed into the <program directory>\languages folder. They are 
+automatically added to the languages list available via Options > Document 
+Options. These files were (and still are) available on our web site at 
+www.sourceinsight.com/public/languages<br><br>
+
+Change: Some default settings were changed.<br><br>
+
+Change: Added additional logging and checking during program initialization.<br><br>
+					</p>
+					
+					<h2>Version 3.50.0073 - June 20, 2013</h2>
+
+					<p class="body">
+Fix: Crash when searching with certain regular expression patterns.<br>
+
+Fix: When using Search and Replace and the replacement string was empty, then 
+the search would skip over the next character.<br>
+
+Fix: Crash in some cases during project synchronization if an error occurred 
+updating the symbol database for a particular source file.<br>
+					</p>
+
+
+					
+					
+					
+					<h2>Version 3.50.0072 - March 19, 2013</h2>
+					<p class="body">Fix: C/C++ some parsing errors handling lines ending with the continuation mark (\).<br>
+					</p>
+					<p class="body">Fix: C/C++ bug parsing of function formal arguments declaring pointers to arrays.<br>
+					</p>
+					<p class="body">Fix: C/C++ parsing support for managed pointers and &quot;handles&quot;.<br>
+					</p>
+					<p class="body">Fix: C# symbol resolution for property and indexer member types.<br>
+					</p>
+					<p class="body">Fix: Several VHDL parser fixes.<br>
+					</p>
+					<p class="body">Misc: Code signing certificate updated.<br>
+					</p>
+					<p class="body"></p>
+					<h2>Version 3.50.0070 - June 20, 2012</h2>
+					<p class="body">Fix: Java: Generic functions with a type specifier before the function name would cause a parsing failure.<br>
+					</p>
+					<p class="body">Fix: C#: long nested namespace names resulted in a corrupted namespace name.<br>
+					</p>
+					<p class="body">Fix: Macro Language: post and pre-increment on a variable caused an error when used as a single statement.<br>
+					</p>
+					<p class="body"></p>
+					<h2>Version 3.50.0069 - April 20, 2012</h2>
+					<p class="body">Fix: Several fixes to C# parsing.<br>
+					</p>
+					<p class="body">Fix: Changed slow animations on Win 7 and Vista.<br>
+					</p>
+					<h2>Version 3.50.0067 - April 12, 2012</h2>
+					<p class="body">Fix: Parsing errors that could happen in C++ templates.<br>
+					</p>
+					<p class="body">Fix: When using Add and Remove Project Files, if you click &quot;Add Tree&quot; or &quot;Add All&quot; and include sub-directories, then Source Insight will only add known document types (for example, just C++ Files), even if you uncheck the box that says &quot;Show only known document types&quot;.<br>
+					</p>
+					<p class="body">Fix: Removed compiler optimization causing a crash during Source&nbsp;Insight parsing of user source files.<br>
+					</p>
+					<p class="body">Change: Updated filealias.txt file for new standard dotless header files.<br>
+					</p>
+					<h2>Version 3.50.0066 - November 2, 2011</h2>
+					<p class="body">Fix: Some parsing errors that could happen in comments lines that end in continuation mark (\)<br>
+					</p>
+					<p class="body">Fix: Search command: the option to automatically load the selected text was incorrectly loading the whole word, instead of exactly the selected text.<br>
+					</p>
+					<p class="body">Fix: Macro event DocSaveComplete was not getting called in some cases.<br>
+					</p>
+					<p class="body"></p>
+					<h2>Version 3.50.0065 - May 31, 2011</h2>
+					<p class="body">Fix: Holding down the CTRL key for a long time on Vista or Windows 7 would cause the application to become gray and inactive.<br>
+					</p>
+					<p class="body">Fix: Misc symbol lookup and syntax formatting fixes.<br>
+					</p>
+					<p class="body">Fix: Added support for Java annotations.<br>
+					</p>
+					<p class="body">Fix: General parsing errors caused by very long symbol names.<br>
+					</p>
+					<p class="body">Fix: Some parsing errors that could happen in lines that end in continuation mark (\)<br>
+					</p>
+					<p class="body">Fix: File seeking error that happened when the SI.LOG file got too big. <br>
+					</p>
+					<p class="body"></p>
+					<h2>Version 3.50.0064 - June 24, 2009</h2>
+					<p class="body"><b>Fix: </b>Crash during Search Files when the search pattern is very large<br>
+					</p>
+					<p class="body"><b>Fix:</b> VHDL variable declaration parsing.<br>
+					</p>
+					<p class="body"><b>Fix:</b> Event Handlers: The AppStart event (and possibly others) that are saved in the Base project were not getting called consistently.<br>
+					</p>
+					<p class="body"><b>Fix:</b> Un-named function parameters highlighted the last word (usually the type) as the parameter name, incorrectly.<br>
+					</p>
+					<p class="body"><b>Fix:</b> Template arguments don&rsquo;t always highlight in the function &#150; they stay as Default Text.<br>
+					</p>
+					<p class="body"><b>Fix:</b> Visual Basic / VBScript added support for classes<br>
+					</p>
+					<p class="body"><b>New:</b> Custom Commands: added %R meta character which expands to the path of the current file, relative to the project's main source directory.</p>
+					<p class="body"><b>Change:</b> This release includes v 2.0 Microsoft .NET Framework symbols.</p>
+					<h2>Version 3.50.0063 - March 21, 2008</h2>
+					<p class="body"><b>Fix:</b> Hi-resolution mice on Vista could scroll in reverse with the scroll wheel.</p>
+					<h2>Version 3.50.0062 - March 14, 2008</h2>
+					<p class="body"><b>Fix:</b> Potential crashing bug that can happen when searching for references, or when the Relation Window updates.</p>
+					<p class="body"><b>Fix: </b>On Windows&nbsp;Vista, the CPU usage got very high during the Search &amp;&nbsp;Replace prompt.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Editing and character selection was fixed for double-byte character sets.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Crash when the network path to the default printer is long, which seems to happen more often on Windows&nbsp;Vista.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Macro&nbsp;Function <b>AssignKeyToCmd</b> was not working if the command was a user defined macro command.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Printing:&nbsp;Long lines that wrapped caused some lines to be repeated or appear with the wrong line numbers printed, particularly if the long appeared at the bottom of a page.</p>
+					<p class="body"><b>Fix: </b>x86 Asm:&nbsp;The TITLE&nbsp;directive was not formatted correctly.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Hi-resolution mice on Vista sometimes would not scroll with the scroll wheel.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Java:&nbsp;Functions that returned generic types were not parsed correctly.</p>
+					<p class="body"><b>Fix: </b>C++/C#:&nbsp;comma separated list of object initializations were not parsed correctly. For example:</p>
+					<p class="code">SomeClass&nbsp;x(1), y(2);</p>
+					<p class="code"></p>
+					<h2>Version 3.50.0058 - July 16, 2007</h2>
+					<p class="body"><b>Fix:</b> Potential crashing problem caused by corrupted project file.</p>
+					<h2>Version 3.50.0057 - April 13, 2007</h2>
+					<p class="body"><b>Fix:</b> Problem parsing #if or&nbsp;#ifdef statements that had a continuation \ mark at the end of the line.</p>
+					<p class="body"><b>Fix:</b> Crashing bug when parsing #define statements with a continuation \ mark at the end of a file.</p>
+					<p class="body"><b>Fix:</b> Rare crashing bug that could happen when reading files with lines &gt;&nbsp;255 characters in length.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Windows&nbsp;Vista:&nbsp;Floating tool windows stayed on top of dialog boxes.</p>
+					<p class="body"><b>Fix:</b> Some compiler optimization bugs were found, and optimizations turned off.</p>
+					<h2>Version 3.50.0054 - March 14, 2007</h2>
+					<p class="body"><b>Fix:</b> Crashing bug when parsing very long #define statements with a lot of line continuation tokens.</p>
+					<p class="body"></p>
+					<h2><b>Fix:</b> Crashing bug while parsing some deeply nested anonymous structs and unions.</h2>
+					<p class="body"><b>Fix:&nbsp;</b>Maximum nesting level for parsing block scopes has been increased.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Document Types using file filters with more than a single dot (.) would not match correctly. For example, &quot;*.abc.xyz&quot; would not match <i>anything.abc.xyz</i>.</p>
+					<h2>Version 3.50.0053 - March 12, 2007</h2>
+					<p class="body"><b>Fix:</b> Windows&nbsp;Vista compatibility changes to improve some GUI issues, such as slow animating, and slow window dragging.</p>
+					<p class="body"><b>Fix: </b>Using a preprocessor &quot;token macro&quot; when defining a class would not parse correctly in some cases.</p>
+					<p class="body"><b>Fix:</b> C# operator member functions were not being parsed correctly.</p>
+					<p class="body"><b>Change:&nbsp;</b>Long dotted symbol names can now be longer before they are abbreviated with ellipses.</p>
+					<p class="body"><b>Change:&nbsp;</b>Token macros can be composed of non-alphanumeric characters. Previously, they had to consist only of characters legal for indentifiers. </p>
+					<p class="body"><b>Change</b>: The &quot;smart paste&quot; feature has been renamed &quot;intelligent paste&quot;. This was done at the request of SlickEdit Inc., since they feel &quot;smart paste&quot;&nbsp;infringes on their trademarked term &quot;SMARTPASTE&quot;. The functionality of this feature is unchanged.</p>
+					<h2>Version 3.50.0052 - Feb 8, 2007</h2>
+					<p class="body"><b>New</b>: Options in <b>Options&nbsp;&gt;&nbsp;Preferences:&nbsp;Typing - </b>for auto-complete of function names, two new options were added: &quot;Insert spaces between parameters&quot;, and &quot;Insert space after function name&quot;</p>
+					<p class="body"><b>Fix:</b> C# parsing of generic function with nested type parameters. For example:</p>
+					<p class="code">private Dictionary&lt;Guid, List&lt;Guid&gt;&gt; MethodThatIsNotParsed()</p>
+					<p class="code"></p>
+					<p class="body"><b>Fix:</b> C# further fixes to generics parsing.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Crash that could occur if a class was missing a semi-colon after the closing brace, and you attempted <b>Jump To Definition</b>.</p>
+					<h2>Version 3.50.0051 - Dec 26, 2006</h2>
+					<p class="body"><b>New</b>: NewProjEx macro function.</p>
+					<p class="body">Syntax: <b>NewProjEx</b>(name, homedir, datadir, fGlobalConfig, fStoreLocals, fStoreMembers, fStoreSyllables)</p>
+					<div class="bodyindent">
+						<p><b>name</b>: the project name. Eg. &quot;myproject&quot;.</p>
+						<p><b>homedir</b>: the home directory of the source files.</p>
+						<p><b>datadir</b>: the directory where project data files are stored.</p>
+						<p><b>fGlobalConfig</b>: true if the project should use the global settings file, or false if it should use its own configuration.</p>
+						<p><b>fStoreLocals</b>: store data about function local variables in the database for browsing.</p>
+						<p><b>fStoreMembers</b>: store data about class/struct members in the database for browsing.</p>
+						<p><b>fStoreSyllables</b>: store data about syllables for browsing.</p>
+						<p >Returns the new project handle (hprj) or nil if errors.</p>
+					</div>
+					<p class="body"><b>New</b>: Java: Added support for enums, including enum member functions.</p>
+					<p class="body"><b>New</b>: Java: Added support for Java Generics.</p>
+					<p class="body"><b>New</b>: C#: Added new support for C# Generics.</p>
+					<p class="body"><b>Fix</b>: Unable to save changes in <b>Default Project Settings</b> dialog.</p>
+					<p class="body"><b>Fix</b>: The <b>Browse Files</b> dialog did not show all &quot;Known Document Types&quot;. This is a limitation of the Windows common dialog for Open File. Now you can select each document type seperately in the dialog's &quot;Type&quot; drop-down list.</p>
+					<p class="body"><b>Fix</b>: .Net Framework symbols might not show up in the auto-complete list. Due to a change made in an earlier update, the class members in the NetFramework may not be found in the auto-complete feature. If .Net symbols do not auto-complete, then open the NetFramework project, and select <b>Project &gt; Rebuild Project</b>.</p>
+					<p class="body"><b>Fix</b>: Sometimes files were said to be modified outside of SI, but they were not. This most likely happened on network drives. Under some conditions, the Windows directory information can lag for remote drives. SI now uses a better method of getting file information.</p>
+					<p class="body"><b>Fix</b>: Various bugs caused by compiler optimization bugs. In some cases, SI would simply crash. This has been tracked down to a code generation bug in the compiler, so the offending optimizations have been turned off in this build of SI.</p>
+					<p class="body"><b>Change</b>: Some changes to default Document Options.</p>
+					<h2>Version 3.50.0050 - Oct 12, 2006</h2>
+					<p class="body"><b>Fix:&nbsp;</b>File Menu<b> </b>was missing the <b>Load Workspace</b> command.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Context Window Display bug that could result in a crash.</p>
+					<p class="body"><b>Fix: </b>Relation Window could omit symbols.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Macro function SetWndSel() was not working for rectangular selections.</p>
+					<p class="body"><b>Change:&nbsp;</b>Macro function <b>RunCmdLine</b> now returns the process exit code if the fWait parameter is true.</p>
+					<p class="body"><b>Change:</b> Logging options in the <b>Preferences:&nbsp;General </b>dialog. Clicking the Logging button lets you specify what to log. This is intended for troubleshooting. The log files are now stored in &quot;My Documents\Source Insight\Logs&quot;, and they now contain more useful information.</p>
+					<h2>Version 3.50.0049 - June 29, 2006</h2>
+					<p class="body"><b>Fix:&nbsp;Syntax Formatting</b> was not always displaying class names correctly when used with a new statement.</p>
+					<p class="body"><b>Fix:&nbsp;C/C++</b> - the <font face="Courier New, Courier, Monaco">#if defined X</font><span class="code"> </span>preprocessor statement was not working, unless the expression X was enclosed in parentheses.</p>
+					<p class="body"><b>Fix:&nbsp;C/C++, C# - </b>some 'parse too complex' problems were fixed.</p>
+					<p class="body"><b>Fix:&nbsp;Macro Language</b> - it was possible to run out of project handles too soon.</p>
+					<p class="body"><b>Fix:&nbsp;File Save </b>- temporary files are now created in the default Windows temp folder (on the local drive) during the 'Save' operation, instead of in the target file's folder. This is more compatible with certain file systems.</p>
+					<p class="body"><b>Fix: Windows&nbsp;Vista</b>:&nbsp;Dialog boxes were causing heap corruption due to the fact that Vista uses a different GUI&nbsp;font name, and was causing a buffer overflow in&nbsp;Source&nbsp;Insight.</p>
+					<p class="body"><b>New: Multiple Backup Files</b> - When you save a file, a new copy of the file is saved into the Backup folder (see:&nbsp;<b>Options &gt;&nbsp;Preferences:&nbsp;Folders</b>) Source&nbsp;Insight used to keep only one version of the backup file. Now, each backup file is given a unique name, and the backup files are kept for a specified amount of time. Select <b>Options &gt;&nbsp;Preferences:&nbsp;Files</b> to see a new option:&nbsp;&quot;Remove backup files older than (days)&quot;. You can indicate the maximum age of backup files.</p>
+					<h2>Version 3.50.0045 - Jan 27, 2006</h2>
+					<p class="body"><b>Fix:&nbsp;Relation Window</b> - clicking the Refresh button when locked would not refresh the window.</p>
+					<h2>Version 3.50.0044 - Jan 26, 2006</h2>
+					<p class="body"><b>Fix: </b><b>Custom Commands </b>that contained a semi-colon in the &quot;Run&quot; string inside quote marks would not run correctly.</p>
+					<p class="body"><b>Fix:&nbsp;Search Forward for Selection</b> command would give an error if you used the command when white-space was selected.</p>
+					<p class="body"><b>Fix:&nbsp;Preferences:Typing</b> the &quot;After pasting select ...&quot;&nbsp;setting was not being saved in the configuration file.</p>
+					<p class="body"><b>Fix:&nbsp;C/C++ #if statements</b> where sometimes evaluated incorrectly.</p>
+					<p class="body"><b>Fix:&nbsp;C/C++ Edit Condition - Scan Files</b> would not update the condition list correctly. Sometimes it had no effect. (New values were entered into the list, but a bug caused the new entries to be ignored.)</p>
+					<p class="body"><b>Fix:&nbsp;C/C++&nbsp;Strings - </b>long strings (such as L&quot;text&quot;)&nbsp;that spanned more than 1 line were not parsed correctly.</p>
+					<p class="body"><b>Fix:&nbsp;'Parse too Complex' - </b>several situations were fixed.</p>
+					<p class="body"><b>Fix:&nbsp;C++ conversion operator </b>were not parsed correctly. These are also known as &quot;cast operators&quot;.</p>
+					<p class="body"><b>Fix: Window Activation</b> was incorrectly shown in the window titlebar when opening a file from the Project Window, in some cases.</p>
+					<p class="body"><b>Fix:&nbsp;Performance improvements</b> when checking file status in the background. This helps the situation when many files are open, and those files are on a remote network drive.</p>
+					<p class="body"><b>Change:&nbsp;Context&nbsp;Window</b> will continue to track in the background, even if it is in the &quot;rolled-up&quot; state.</p>
+					<p class="body"><b>New: Macro Language 'global' statement</b> A new statement was added to declare global variables. Global variables have global scope, and they persist for the duration of the session. For more information, see <a href="docs35/ag1226518.htm"><b>Global Variables</b></a>.</p>
+					<p class="body"><b>New:&nbsp;Macro Language</b> pre/post increment/decrement operators are now supported, like in C. That is, ++i, i++, --i, i++.</p>
+					<p class="body"><b>New:&nbsp;Macro&nbsp;Event Handlers</b> have been added. An event handler is a function that gets called when specific events occur.</p>
+					<p class="body">For more information, see <b><a href="docs35/Macro%20Events.htm">Event Handlers</a></b>.</p>
+					<h2>Version 3.50.0042 - August 8, 2005</h2>
+					<p class="body"><b>Fix: </b><b>'Parse too Complex&quot; </b>problem was fixed.</p>
+					<h2>Version 3.50.0040 - July 11, 2005</h2>
+					<p class="body"><b>Fix: </b><b>Keyboard </b>input could be confused by a keyboard overrun (i.e. you hold down a key and overflow the input buffer).</p>
+					<p class="body"><b>Fix:&nbsp;Macro </b>function Msg() now has a Cancel button, along with the OK&nbsp;button. Clicking Cancel aborts the macro.</p>
+					<h2>Version 3.50.0039 - June 22. 2005</h2>
+					<p class="body"><b>New: Preferences:&nbsp;General: </b>A new option was added:&nbsp;&quot;<b>Remove missing files from project&quot;</b> under the &quot;Project File&nbsp;Synchronization&quot;&nbsp;section. If enabled, project files that cannot be found will be automatically removed from the project. In previous versions, Source&nbsp;Insight behaved as though this option was enabled. However, if you often open projects that have files on a remote network drive, and that drive is sometimes not connected, then Source Insight would automatically remove your &quot;missing&quot; project files just because the network connection was down. To resolve that problem, disable this option.</p>
+					<p class="body"><b>New:&nbsp;Preferences:&nbsp;General:</b> A new option was added:&nbsp;&quot;<b>Keep dialogs on the same monitor as the main window</b>&quot;. Normally, dialog positions are remembered, even if they are on a second monitor. &nbsp;If this option is enabled, then dialogs will only be forced onto the monitor where the main Source Insight window resides.</p>
+					<p class="body"><b>New:&nbsp;Special Window Color</b> setting for each source window. Right-click on a source window and select <b>Special Window Color</b> to set the background color of that particular window. Right-click and select <b>Remove&nbsp;Special Window Color</b> to return the window color to the normal color. The special color is lost when the window or file is explicitly closed, but it is retained between sessions of Source&nbsp;Insight.</p>
+					<p class="body"><b>Fix:&nbsp;C++ Namespace alias resolution</b> of the form:&nbsp;namespace ABC = Alpha::Beta::Charlie, where ABC&nbsp;is an alias for &quot;Alpha::Beta::Charlie&quot;.</p>
+					<p class="body"><b>Fix:&nbsp;C#&nbsp;Generics - &quot;where&quot; keyword: </b>Generics that used the &quot;where&quot;&nbsp;constraint keyword were not parsed correctly.</p>
+					<p class="body"><b>Fix:&nbsp;Custom&nbsp;Commands</b>: A double % symbol in the custom command &quot;run&quot; string is now interpreted as a single % in the output.</p>
+					<p class="body"><b>Fix:&nbsp;Search Files </b>and <b>Replace&nbsp;Files:&nbsp;</b>the state of the &quot;Project&nbsp;Wide&quot; check box is remembered.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Various fixes to file handling when the file name begins with a dot (.).</p>
+					<p class="body"><b>Fix:&nbsp;C++: </b>Preprocessor #if statements were not interpreted correctly if a space was missing between the #if and the next token. For example:&nbsp;<b>#if(ABC)</b></p>
+					<p class="body"><b>Fix: Javascript:&nbsp;</b>Declaring and assigning function objects was not parsed correctly.</p>
+					<p class="body"><b>Fix:&nbsp;Macro&nbsp;Language:&nbsp;GetReg Function: </b>The function was limiting the return value to 254 characters.</p>
+					<p class="body"><b>Fix:&nbsp;</b>In file and symbol lists, there is a substring search function. There was a 5000 item limit, above which no filtering would happen. This limit has been removed.</p>
+					<p class="body"></p>
+					<h2>Version 3.50.0038 - December 22, 2004</h2>
+					<p class="body"><b>New:&nbsp;</b>Custom comment line formatting - allows you to have special formatting for comment lines that begin with a particular string. This works in C,&nbsp;C++, Java, C#, and JavaScript. For example, you can have comments that begin with //#COOL displayed in a particular style. To create a custom comment format:</p>
+					<blockquote>
+						<p class="body">1. Select <b>Options &gt;&nbsp;Preferences:&nbsp;Languages</b>, select the language (for example C++) and then click <b>Properties</b>. Alternatively, you can right-click on a source file and select <b>Language Properties</b>.</p>
+						<p class="body">2. Click the <b>Comments and Ranges</b> tab at the top of the dialog.</p>
+						<p class="body">3. Click the <b>Add</b> button to add a new comment range. For non-custom languages such as C++, you can only add &quot;Line&quot;&nbsp;style comment ranges. Furthermore, you cannot edit or delete the built-in comment ranges that are normal for the language.</p>
+						<p class="body">4. In the <b>Range begins with </b>text box, enter the starting text of the comment range . The text <b>must</b> begin with double forward slash //. For example you can enter a string like //#COOL, but not #COOL.</p>
+						<p class="body">5. In the <b>Syntax Formatting Style</b> drop-down list, select the style you want to format the comment with.</p>
+					</blockquote>
+					<p class="body"><b>Fix: </b>Stack Overflow crash was fixed. &nbsp;This bug was made more likely by a change in the previous update.</p>
+					<h2>Version 3.50.0037 - November 26, 2004</h2>
+					<p class="body"><b>New Preference tab:&nbsp;</b>&quot;Folders&quot; - lets you specify the location of the Source&nbsp;Insight data and project files stored on your computer. &nbsp;By default, all files are stored in &quot;My Documents\Source Insight&quot;.</p>
+					<p class="body"><b>New:&nbsp;</b>Macro function <b>GetSymbolFromCursor(hbuf, ln, ich)</b> returns a Symbol record that describes the symbol currently at the location in the given buffer. hbuf is the buffer handle. ln is the line number, ich is the zero based index of the character on the line.</p>
+					<p class="body"><b>New:&nbsp;</b>The Relation window can now show relations for files, as well as symbols. For example, you can show what files refer to functions within a given file. Or, you can show what functions are inside of a given file.</p>
+					<p class="body"><b>New:&nbsp;</b>option in <b>Preferences:&nbsp;Symbol Lookups: </b>&quot;Find symbols in open files not part of current project&quot;. If this is checked (the default) then symbol lookup operations will locate symbols declared in files that happen to be open, but are not added to the project. If this is unchecked, then only symbols in files that are actually part of the project will be found.</p>
+					<p class="body"><b>New:&nbsp;</b>C# language support for <b>sealed</b> and <b>partial</b> keywords, as well as C# generics.</p>
+					<p class="body"><b>New:&nbsp;</b>option in <b>Preferences:&nbsp;General: </b>A check box was added to enable or disable drag-and-drop editing.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Macro function <b>Msg</b> would not display correctly if percent marks were in the output string.</p>
+					<p class="body"><b>Fix:&nbsp;Search Project</b> dialog box would not load the selected text automatically.</p>
+					<p class="body"><b>Fix:&nbsp;</b>A bug in <b>Search Files</b> and <b>Lookup References</b> could leave files open in the background.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Macro function <b>GetSymbolLocationEx</b> contained a bug that would cause the function to return no matches.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C/C++ parsing fix for empty formal parameter lists using the <b>void</b> keyword, such as &quot;int Hello(void);&quot;.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C/C++/CS/Java symbol lookup fix for determining the type of a variable when the declaration spans more than 1 line.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Symbol database was not preserving the number of function arguments for function symbols. This could lead to incorrect symbol lookups for overloaded functions in C++.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Symbol lookups were not functioning correctly for class and struct variables declared as &quot;extern&quot;.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Custom commands would not set the current working directory correctly if it contained a space in the name.</p>
+					<h2>Version 3.50.0035 - Jan. 29, 2004</h2>
+					<p class="body"><b>Fix:&nbsp;</b>Macro function <b>RunCmd</b> would not run macro commands.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C++&nbsp;declarations involving nested templates were not parsed correctly. For example: typedef B&lt;A&lt;int&gt; &gt; BAInt;</p>
+					<p class="body"><b>Fix:&nbsp;</b>Displaying line numbers could result in some garbage characters displayed, depending on the contents of lines.</p>
+					<p class="body"><b>Fix:&nbsp;Search Project</b> and <b>Lookup References</b> bugs when using the <b>keyword</b> search method: the <b>case sensitive</b> option had no effect, and searching for language keywords, such as &quot;typedef&quot;, or &quot;case&quot; would not find matches.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C++&nbsp;Function Templates:&nbsp;The template symbol entries in the Symbol window pane would appear out of order if a non-template symbol was defined in between the function templates.</p>
+					<p class="body"><b>Fix:</b> C# verbatim strings that spanned more then a single line broke the parsing.</p>
+					<p class="body"><b>Change:&nbsp;</b>The project-symbol-path size has been increased from 254 chars to 2558 chars in length. You can edit it in the <b>Options &gt;&nbsp;Preferences:&nbsp;Symbol Lookups</b> dialog.</p>
+					<p class="body"><b>New:&nbsp;</b>C# Generics are now parsed. Two new styles were added: &quot;Declare Type Parameter&quot;, and &quot;Ref to Type Parameter&quot;, which are used to display the type parameters.</p>
+					<h2>Version 3.50.0034 - September 8, 2003</h2>
+					<p class="body"><b>Fix:&nbsp;</b>Crash could occur if you type backspace at the start of a line that causes the previous line to exceed the maximum size of 4092 characters.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Display bug when displaying a line with 4092 characters.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Crash could occur when parsing #if statements if a single identifier was longer than 127 characters long.</p>
+					<h2>Version 3.50.0033 - September 2, 2003</h2>
+					<p class="body"><b>New: Preferences:&nbsp;Display: </b>option &quot;Trim long path names with ellipses&quot;. This is the default behavior, but you can now turn it off.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Crash using the Search Files command to search a directory with a large number of files.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Text formatting was improved to handle longer, more complex lines, with many tokens and formatting transitions.</p>
+					<p class="body"><b>Fix: </b>C# new array initializations were not parsed correctly. For example, int[] rmap = new int[] {0, 1, 2, 3, 4};</p>
+					<p class="body"><b>Fix:&nbsp;</b>Potential crash that could occur when displaying some C/C++ code. The crash was caused by an infinite recursion in the code that finds the most-base type of a typedef.</p>
+					<p class="body"><b>Change:&nbsp;</b>The maximum line length of the editor was increased from 2046 to 4092 characters.</p>
+					<h2>Version 3.50.0032 - July 30, 2003</h2>
+					<p class="body"><b>Fix:&nbsp;</b>Crash on opening a C/C++&nbsp;file with a line longer than 2040 character containing a preprocessor #if statement.</p>
+					<h2>Version 3.50.0031 - July 28, 2003</h2>
+					<p class="body"><b>New:&nbsp;</b>Conditional Parsing Variables: &quot;Scan&quot; function. In the <b>Edit Condition</b> and <b>Project-Specific Conditions</b> dialog boxes, there is a new &quot;Scan Files...&quot;&nbsp;button. Click it to have Source Insight scan your project's source files looking for conditional variables used in any #if, #ifdef, and #elif statements. The resulting variable names are loaded into the condition list. Afterwards, you can edit their values, or remove them from the list.</p>
+					<p class="body"><b>New:&nbsp;</b>Block Cursor Shape: Enable this in <b>Options &gt;&nbsp;Preferences:&nbsp;Typing</b>.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Load&nbsp;Workspace command was missing the the command list. It is back now.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Memory leak while paginating files in the background. &nbsp;This would happen if you had the options set to show either page breaks in the display, or the page number in the status bar.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Symbol&nbsp;Info window size and position is saved between sessions. The information is saved in the configuration file as part of the &quot;Display&quot; settings.</p>
+					<p class="body"><b>Fix:</b> Relation&nbsp;Window: If you click on the column headers in the outline view of the Relation Window, it sorts the listing. Now, that same sorting order is used when computing the graphical view of the Relation Window.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Lookup References and Search Project commands:&nbsp;selecting the &quot;Simple String&quot;&nbsp;mode under &quot;Search Method&quot; was interpreting regular expression meta characters in the string.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Heap clobber bug fixed in code that fires during Undo saving and selection history saving.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Expand Tabs To&nbsp;Spaces:&nbsp;This was sometimes not working due to an uninitialized buffer bug. The expansion to spaces was also not happening in some cases if &quot;Smart Paste&quot;&nbsp;or auto-indenting was causing extra indentation.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Auto-Complete: The auto-complete feature would insert bogus characters if you selected C++ operator-overload functions from the list.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C# :&nbsp;The #region and #endregion lines are now treated like comments by the syntax formatting.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Project Window:&nbsp;Clicking on the file name column header would crash. This only happened if the project window was showing files in the current directory, not the project file list.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Potential crash could occur while rebuilding a project if a source file window needed to repaint.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Bug in the internal &quot;missing symbol cache&quot; could cause some symbol references not to be show correctly by syntax formatting.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Improved performance for symbol lookups and rendering syntax formatting for deeply nested classes and namespaces.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Some symbol lookup operations could hang while trying to resolve &quot;import &lt;package&gt;&quot; in Java and &quot;using&quot;&nbsp;in C++/C#.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Made small change to allow call trees to be computed with custom languages.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Auto-complete list would not appear when editing a custom language file.</p>
+					<p class="body"><b>New:&nbsp;</b>Macro function: <b>XposFromIch (hwnd, ln, ich)</b> - returns the x position of a character. The x position returned is relative to the left edge of the window. The line number is given in ln. The character position is given in ich. Both ln and ich are zero-based indexes. Hwnd is the handle to the window displaying the line. Note that the line does not actually have to be displayed in the window when this function is called.</p>
+					<p class="body"><b>New:&nbsp;</b>Macro function <b>IchFromXpos (hwnd, ln, xpos)</b> - returns the character position of the character that is displayed at the given x position xpos. The line number is given in ln. Xpos is the given x position relative to the left edge of the window. Hwnd is the handle to the window displaying the line. Note that the line does not actually have to be displayed in the window when this function is called.</p>
+					<p class="body"><b>New:&nbsp;</b>Macro function:&nbsp;<b>AddConditionVariable (hproj, szName, szValue)</b> - adds a new conditional parsing variable used to evaluation conditional statements such as #if. Hproj is a handle to the project. If hproj is hNil, then the new variable is added to the global condition list. The name is given in szName, and the value is given in szValue.</p>
+					<p class="body"><b>New:&nbsp;</b>Macro function:&nbsp;<b>DeleteConditionVariable (hproj, szName) </b>- deletes a conditional parsing variable used to evaluation conditional statements such as #if. Hproj is a handle to the project. If hproj is hNil, then the variable is deleted from the global condition list. The name is given in szVariable.</p>
+					<p class="body"></p>
+					<h2>Version 3.50.0029 - April 2, 2003</h2>
+					<p class="body"><b>Fix:</b> Several fixes were made to handle the possibility of network drives being disconnected.</p>
+					<p class="body"><b>Fix:</b> Using the Close All command, and then cancelling the &quot;Save Modified Files&quot; dialog box would sometimes leave Source&nbsp;Insight in a &quot;shut-down&quot; state, which would disable certain commands and stop background parsing.</p>
+					<p class="body"><b>Fix:</b> Syntax Formatting was incorrect near the end of lines if the &quot;annotate closing braces&quot; options were enabled.</p>
+					<p class="body"><b>Fix: </b>Symbol Lookup sometimes failed due to a bug in the internal &quot;Missing Symbol Cache&quot;.</p>
+					<p class="body"><b>Fix: </b>C# Verbatim strings could cause symbols below them to not parse.</p>
+					<p class="body"><b>Fix:</b> Project Settings for the &quot;Source&nbsp;Directory&quot; were sometimes corrupted due to a bug that did not resolve relative paths correctly. This could lead to strange and incorrect names in the project's file list.</p>
+					<p class="body"><b>Change:</b> Long file path names are now trimmed down to show the first and last folder names in several dialog boxes and notice windows. This will allow you to read at least the most relavent file path information, instead of just truncating the name.</p>
+					<h2>Version 3.50.0028 - March 12, 2003</h2>
+					<p class="body"><b>Fix:</b> Files could be truncated if the option to &quot;remove extra white space&quot; is enabled. It is strongly recommended that you upgrade to this version if you have <b>Options &gt;&nbsp;Preferences:&nbsp;Files:&nbsp;&quot;Remove extra white space when saving&quot;</b> enabled.</p>
+					<h2>Version 3.50.0027 - March 7, 2003</h2>
+					<p class="body"><b>Fix:</b> Relation Window: The Relation Window was not expanding correctly when showing multiple references inside the same node box.</p>
+					<p class="body"><b>Fix: </b>Saving Files that contain lines longer than 2026 characters was corrupting the file and introducing new line breaks.</p>
+					<p class="body"><b>Fix: ASP/JSP/HTML:</b> Several bug fixes were made to how scripts were parsed and formatted. Also, a freezing bug was fixed in this area that could happen when typing in a script body.</p>
+					<p class="body"><b>Fix: Searching:</b> Fixed a bug that caused some regular expressions to freeze the program.</p>
+					<p class="body"><b>Fix: C#:</b> Some Verbatim strings were not parsed correctly.</p>
+					<p class="body"><b>Fix: Paste: </b>After pasting and using the UP or DOWN&nbsp;arrows, the horizontal position was kind of arbitrary. Now when you use the UP&nbsp;or DOWN arrows after pasting, the cursor will move vertically from the position the cursor is in after the paste.</p>
+					<p class="body"><b>Fix: C++/Java/C#:</b> Symbol lookup was not finding members of a base class when the derived class was referred to with a namespace prefix. For example:</p>
+					<pre><font color="#006600">namespace NS
+{
+	class Base 
+	{
+		void member();	
+	};
+
+	class Derived : Base { };
+};
+
+NS::Derived d;
+d.member(); // member was not being found in NS::Base
+</font></pre>
+					<p class="body"></p>
+					<p class="body"><b>Change:</b> Replace command: After the replace operation, the original whole line-selection is restored. You can disable this with a new check box added to the <b>Options &gt;&nbsp;Preferences:&nbsp;Search</b> dialog.</p>
+					<p class="body"><b>New:&nbsp;</b>Macro function:&nbsp;<b>AddFileListToProj</b> <b>( hprj, szListFileName)</b> - adds all the files listed in the given file to the project.</p>
+					<blockquote>
+						<p class="body"><i>hprj</i> is the project handle</p>
+						<p class="body"><i>szListFileName</i> is a string containing the name of the list file. The list file should be a text file containing one file name per line. The file can also contain one directory per line, in which case the directory's contents are added to the project.</p>
+					</blockquote>
+					<p class="body"><b>New:&nbsp;</b>Macro function:&nbsp;<b>EmptyProj</b> <b>(hprj)</b> - empties the project by removing all files from the project. The files themselves are not deleted or affected.</p>
+					<blockquote>
+						<p class="body"><i>hprj</i> is the project handle</p>
+					</blockquote>
+					<h2>Version 3.50.0026 - February 10, 2003</h2>
+					<p class="body"><b>Fix:</b> ASP/JSP error parsing some server-side scripts.</p>
+					<p class="body"><b>Fix:</b> Auto-complete window was not showing separate entries for overloaded functions.</p>
+					<p class="body"><b>Fix:</b> Repainting bug when drawing the application background, which would cause the background to be drawn using the wrong color when the Style Properties dialog was up.</p>
+					<p class="body"><b>New:&nbsp;</b>Preferences:&nbsp;Display option:&nbsp;&quot;Enable Animations&quot;. This controls various window border animations that occur when you activate and roll-up some windows. You may want to disable these animations if your video performance is too slow.</p>
+					<h2>Version 3.50.0025 - February 7, 2003</h2>
+					<p class="body"><b>Fix:</b> Task switching into Source Insight could be slow when many files were open in Source&nbsp;Insight. Unnecessary formatting and redrawing was being done.</p>
+					<p class="body"><b>Fix:</b>&nbsp;Java:&nbsp;Crashes in symbol lookup operations and displaying code.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Java Symbols:&nbsp;Display speed and general symbol lookup speed was increased for Java files. Some very slow situations were found and removed.</p>
+					<p class="body"><b>Fix:</b> The symbol-lookup engine was not handling symbols that had embedded dots (.) in the name. Normally symbols do not have dots in the name, but it is possible to create a custom parsing pattern that results in such a symbol name. Source&nbsp;Insight stores symbol names internally in a &quot;dotted-name&quot; format, such as &quot;classname.membername&quot;.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Pasting lines when the &quot;Smart Paste&quot; mode is on caused the lines to be re-tabbified. This could result in some spaces appearing where there used to be tabs. Now, if the paste does not need to alter the indentation of the line, the tabs in the line are not altered.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Pasting a whole line now moves the insertion point to the beginning of the next line, instead of the end of the new line.</p>
+					<p class="body"><b>Fix:&nbsp;</b>HTML/ASP/XML parsing: Attribute strings that spanned more than one line were not parsed correctly.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Symbol Lookup could result in a crash, especially in deeply nested blocks, or in Java with many import statements.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C/C++ parsing:&nbsp;Function declarations were not parsed if a struct was declared in the formal argument list.</p>
+					<p class="body"><b>Fix: </b>C++ parsing:&nbsp;In a class or struct, the member that followed the &quot;public:&quot; label was not being parsed correctly. This was caused by a bogus entry for &quot;public&quot; in the c.tom file. A new c.tom file is installed with this version. If you don't want to accept this new c.tom file, then open &quot;My Documents\Source Insight\c.tom&quot; and find the line with &quot;public&quot; on a line by itself. Delete that line.</p>
+					<p class="body"><b>Fix:&nbsp;</b>C# parsing:&nbsp;Global Function declarations were not parsed (at the file scope).</p>
+					<p class="body"><b>Fix:&nbsp;</b>Auto-completion: the auto-completion list would fail to appear at times, even if the option was active.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Resource&nbsp;leak when docking and undocking windows.</p>
+					<p class="body"><b>Fix:</b> Project Report:&nbsp;File name case was not being preserved in the project report.</p>
+					<p class="body"><b>Fix:&nbsp;</b>The check mark on the menu item &quot;View &gt;&nbsp;Visible Tabs&quot; was not working correctly.</p>
+					<p class="body"><b>Fix:&nbsp;</b>Minor adjustments to toolbar positioning.</p>
+					<p class="body"><b>Change:&nbsp;</b>Java: Nested package names now appear on one line in the symbol window pane, instead of showing a tree of package nodes.</p>
+					<h2>Version 3.50.0023 - January 14, 2003</h2>
+					<p class="body"><b>Fix:</b> Crash Parsing HTML &amp; XML: Including CDATA sections inside of some HTML and XML files could cause the parser to crash.</p>
+					<p class="body"><b>Fix:</b> HTML &amp; XML: Custom parsing patterns were not finding symbols in element tags.</p>
+					<p class="body"><b>Fix:</b> Slowness in C/C++/Java/C#: Symbol lookup operations in some projects could be very slow, due to duplicate symbols being returned by the lookup engine.</p>
+					<p class="body"><b>Fix:</b> Some dialog boxes did not display correctly in Asian versions of&nbsp;Windows. Notably, the Preferences multi-page dialog box was not sized large enough to display the font used in the dialog box.</p>
+					<p class="body"><b>Fix: </b>The styles used to display references to Java packages and namespaces were swapped.</p>
+					<p class="body"><b>Fix:&nbsp;</b>JSP script comments were not recognized. For example:</p>
+					<p class="code">&lt;%-- this is a comment --%&gt;</p>
+					<p class="body"><b>Fix:&nbsp;</b>ASP/HTML/JSP script languages were not recognized in cases where version number was appended to the language name. For example:</p>
+					<p class="code">&lt;script language=&quot;JavaScript2.0&quot;&gt;......&lt;/script&gt;</p>
+					<p class="body"><b>Fix:&nbsp;</b>Java: Initializer lists following a new array was not parsed correctly. For example:</p>
+					<p class="code">static int[] newarray = new int[] { ...... };</p>
+					<p class="body"><b>Fix:</b> Project Synchronizing could put up warning messages, even if the &quot;Suppress warning messages&quot;&nbsp;option was checked.</p>
+					<hr>
+					<p class="body">For a list of new features introduced in version 3.5, see the <a href="http://www.sourceinsight.com/new35.html">Source&nbsp;Insight 3.5 Changes</a> page.</p>
+					<p class="body"></p>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top"></td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#87ceeb">
+			<tr>
+				<td>
+					<p class="menu">&nbsp;&nbsp;<a href="http://www.sourceinsight.com/index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.sourceinsight.com/buyit.html">Buy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.sourceinsight.com/prodinfo.html">Product</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.sourceinsight.com/support.html">Support</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.sourceinsight.com/update.html">Updates</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.sourceinsight.com/contact.html">Contact</a>&nbsp;&nbsp;</p>
+				</td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>
+
+
+

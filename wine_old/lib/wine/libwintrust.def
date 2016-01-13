@@ -1,0 +1,82 @@
+; File generated automatically from ./wintrust.spec; do not edit!
+
+LIBRARY wintrust.dll
+
+EXPORTS
+  CryptCATAdminAcquireContext@12 @3
+  CryptCATAdminAddCatalog@16 @4
+  CryptCATAdminCalcHashFromFileHandle@16 @5
+  CryptCATAdminEnumCatalogFromHash@20 @6
+  CryptCATAdminReleaseCatalogContext@12 @8
+  CryptCATAdminReleaseContext@8 @9
+  CryptCATAdminRemoveCatalog@12 @10
+  CryptCATAdminResolveCatalogPath@16 @11
+  CryptCATCDFClose@4 @12
+  CryptCATCDFEnumCatAttributes@12 @15
+  CryptCATCDFEnumMembersByCDFTagEx@24 @18
+  CryptCATCDFOpen@8 @19
+  CryptCATCatalogInfoFromContext@12 @20
+  CryptCATClose@4 @21
+  CryptCATEnumerateAttr@12 @22
+  CryptCATEnumerateCatAttr@8 @23
+  CryptCATEnumerateMember@8 @24
+  CryptCATGetAttrInfo@12 @25
+  CryptCATGetCatAttrInfo@8 @26
+  CryptCATGetMemberInfo@8 @27
+  CryptCATOpen@20 @29
+  CryptSIPCreateIndirectData@12 @36
+  CryptSIPGetSignedDataMsg@20 @39
+  CryptSIPPutSignedDataMsg@20 @40
+  CryptSIPRemoveSignedDataMsg@8 @41
+  CryptSIPVerifyIndirectData@8 @42
+  DllRegisterServer@0 @43 PRIVATE
+  DllUnregisterServer@0 @44 PRIVATE
+  GenericChainCertificateTrust@4 @49
+  GenericChainFinalProv@4 @50
+  HTTPSCertificateTrust@4 @51
+  HTTPSFinalProv@4 @52
+  OpenPersonalTrustDBDialog@4 @58
+  SoftpubAuthenticode@4 @59
+  SoftpubCheckCert@16 @60
+  SoftpubCleanup@4 @61
+  SoftpubDefCertInit@4 @62
+  SoftpubDllRegisterServer@0 @63
+  SoftpubDllUnregisterServer@0 @64
+  SoftpubInitialize@4 @67
+  SoftpubLoadMessage@4 @69
+  SoftpubLoadSignature@4 @70
+  TrustIsCertificateSelfSigned@4 @74
+  WTHelperGetFileHandle@4 @80
+  WTHelperGetFileName@4 @81
+  WTHelperGetKnownUsages@8 @82
+  WTHelperGetProvCertFromChain@8 @83
+  WTHelperGetProvPrivateDataFromChain@8 @84
+  WTHelperGetProvSignerFromChain@16 @85
+  WTHelperProvDataFromStateData@4 @88
+  WVTAsn1CatMemberInfoDecode@28 @89
+  WVTAsn1CatMemberInfoEncode@20 @90
+  WVTAsn1CatNameValueDecode@28 @91
+  WVTAsn1CatNameValueEncode@20 @92
+  WVTAsn1SpcFinancialCriteriaInfoDecode@28 @93
+  WVTAsn1SpcFinancialCriteriaInfoEncode@20 @94
+  WVTAsn1SpcIndirectDataContentDecode@28 @95
+  WVTAsn1SpcIndirectDataContentEncode@20 @96
+  WVTAsn1SpcLinkDecode@28 @97
+  WVTAsn1SpcLinkEncode@20 @98
+  WVTAsn1SpcPeImageDataDecode@28 @101
+  WVTAsn1SpcPeImageDataEncode@20 @102
+  WVTAsn1SpcSpOpusInfoDecode@28 @107
+  WVTAsn1SpcSpOpusInfoEncode@20 @108
+  WinVerifyTrust@12 @111
+  WinVerifyTrustEx@12 @112
+  WintrustAddActionID@12 @113
+  WintrustAddDefaultForUsage@8 @114
+  WintrustCertificateTrust@4 @115
+  WintrustGetRegPolicyFlags@4 @117
+  WintrustLoadFunctionPointers@8 @118
+  WintrustRemoveActionID@4 @119
+  WintrustSetRegPolicyFlags@4 @120
+  mscat32DllRegisterServer@0 @121
+  mscat32DllUnregisterServer@0 @122
+  mssip32DllRegisterServer@0 @123
+  mssip32DllUnregisterServer@0 @124

@@ -1,0 +1,16 @@
+.nodeco { text-decoration: none }
+.body { font-size: 70%; line-height: 135%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 1em }
+.list { font-size: 70%; line-height: 100%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 .2em }
+.bodyindent { font-size: 70%; line-height: 135%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 1em 3em }
+.body ul { font-size: 70%; line-height: 135%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 1em }.figure  { font-style: italic; font-size: 70%; line-height: 135%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 4em 1em }
+.body ol { font-size: 70%; line-height: 135%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 1em }
+.bodytall  { font-size: 70%; line-height: 1.7em; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin: 0 0 1em }
+.cellbody { font-size: 70%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.cellheading { font-weight: bold; font-size: 80%; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.H1PadBelow { color: #000080; font-weight: bold; font-size: 16pt; font-family: Verdana, Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin-top: 1em; margin-bottom: 1em }
+.menu    { color: green; font-weight: bold; font-size: 10pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; margin-top: 0px; margin-bottom: 0px }
+H1  { color: #000080; font-weight: bold; font-size: 16pt; font-family: Arial, Helvetica, Geneva, Verdana, Swiss, SunSans-Regular }
+H2  { color: #039; font-weight: bold; font-size: 11pt; font-family: Arial, Helvetica, Geneva, Verdana, Swiss, SunSans-Regular; margin: 1.4em 0 0.2em }
+H3  { color: #039; font-weight: bold; font-size: 10pt; font-family: Arial, Helvetica, Geneva, Verdana, Swiss, SunSans-Regular; margin: 1.4em 0 0.2em }
+.menu a:hover { background-color: #cff }
+.menu a { text-decoration: none}

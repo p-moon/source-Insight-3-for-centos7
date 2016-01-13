@@ -1,0 +1,11 @@
+; File generated automatically from ./dlls/wer/wer.spec; do not edit!
+
+LIBRARY wer.dll
+
+EXPORTS
+  WerAddExcludedApplication@8 @64
+  WerRemoveExcludedApplication@8 @65
+  WerReportCloseHandle@4 @68
+  WerReportCreate@16 @69
+  WerReportSetParameter@16 @70
+  WerReportSubmit@16 @72

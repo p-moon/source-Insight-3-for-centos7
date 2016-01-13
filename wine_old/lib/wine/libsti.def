@@ -1,0 +1,8 @@
+; File generated automatically from ./sti.spec; do not edit!
+
+LIBRARY sti.dll
+
+EXPORTS
+  StiCreateInstance@16 @5
+  StiCreateInstanceA@16 @6
+  StiCreateInstanceW@16 @7
